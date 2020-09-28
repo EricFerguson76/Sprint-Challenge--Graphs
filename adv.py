@@ -37,7 +37,16 @@ player = Player(world.starting_room)
 # Fill this out with directions to walk
 # traversal_path = ['n', 'n']
 traversal_path = []
-reverse_dir = {'n': 's', 'e': 'w', 's': 'n', 'w': 'e'}
+# explored = {0: {'n': '?', 's': '?', 'w': '?', 'e': '?'}}
+# opposite = {'n': 's', 'e': 'w', 's': 'n', 'w': 'e'}
+
+# PseudoCode:
+# Current player location
+# Room starting point
+# loop through unexplored rooms
+# Mark rooms as explored
+# Once at a dead end, back track to find unexplored rooms
+# Repeat process
 
 
 # TRAVERSAL TEST - DO NOT MODIFY
